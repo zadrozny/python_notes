@@ -31,3 +31,16 @@ def multiply_4(lst):
 	return reduce(lambda x, y: mul(x, y), lst)
 
 
+'''
+>>> while True: 
+...   timeit.timeit("multiply_1(range(1,100))", setup="from product_of_a_list import multiply_1")
+...   timeit.timeit("multiply_2(range(1,100))", setup="from product_of_a_list import multiply_2")
+...   timeit.timeit("multiply_3(range(1,100))", setup="from product_of_a_list import multiply_3")
+...   timeit.timeit("multiply_4(range(1,100))", setup="from product_of_a_list import multiply_4")
+...   break
+... 
+13.751580953598022
+25.804615020751953
+18.764001846313477
+27.849537134170532
+'''
