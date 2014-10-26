@@ -13,12 +13,9 @@
 data ='data.txt'
 
 
-
-
-
-incomes = [int(line.split("|")[-1].strip())
-			for line in open(data,'r').readlines()[2:]
-			if line.split("|")[-1].strip().isalnum()]
+incomes = [int(line.split("|")[-1].strip()) # Household income last element
+			for line in open(data,'r').readlines()[2:] # Skip headers
+			if line.split("|")[-1].strip().isalnum()]  # Skip bullshit entries
 
 avg_income = sum(incomes) / len(incomes)
 
@@ -51,3 +48,26 @@ while True:
 avg_income = sum_of_incomes / i
 
 print avg_income
+
+
+
+
+# Third approach: iterate over the file line by line
+
+sum_of_incomes = 0
+i = 0
+with open(data) as f:
+	for line in f:
+		val = line.split("|")[-1].strip()
+		if val.isalnum():
+			try: 
+				sum_of_incomes += int(val)
+				i += 1
+			except ValueError:
+				pass
+
+avg_income = sum_of_incomes / i
+
+print avg_income
+
+
