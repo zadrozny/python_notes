@@ -8,7 +8,8 @@ Sources:
 
 
 # This needs to be dynamic, 
-# otherwise successive images will overwrite. Need to write a regular expression
+# otherwise successive images will overwrite. 
+# Need to write a regular expression to extract image name / description
 
 url = r'http://metmuseum.com/~/media/Images/Exhibitions/2014/Treasures%20from%20India/JewelsIndia_WEB_2.jpg?mw=481'
 
