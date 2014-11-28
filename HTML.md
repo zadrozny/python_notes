@@ -26,6 +26,9 @@ For example, to render Düsseldorf the HTML source should read
     D&uuml;sseldorf or D&#252;sseldorf
 '''
 
+http://www.utexas.edu/learn/html/spchar.html
+
+
 # Replacing html entities with the corresponding utf-8 characters in Python 2.6 
 
 http://stackoverflow.com/q/730299/1366410
