@@ -3,17 +3,17 @@
 '''
 By default, HTML+ documents are made up of 8-bit characters from the ISO 8859 Latin-1 character set. The network protocol used to retrieve documents may translate the character set into a locally acceptable form, e.g. EBCDIC. The HTTP protocol uses the MIME standard (RFC 1341) to specify the document type and character set. ISO SGML entity definitions are used to include characters which are missing from the character set or which would otherwise be confused with markup elements, e.g:
 
-
-'&amp;'
+<tt>
+&amp;</tt>
     ampersand & 
 
-'&lt;'
+&lt;
     less than sign < 
 
-'&gt;'
+&gt;
     greater than sign > 
 
-'&quot;'
+&quot;
     the double quote sign " 
 
 http://www.w3.org/MarkUp/HTMLPlus/htmlplus_13.html
