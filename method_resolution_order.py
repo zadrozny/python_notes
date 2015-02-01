@@ -1,6 +1,6 @@
-#!/usr/lib64/python3.3
+#!/usr/bin/env python3
 
-# https://github.com/akulakov
+# Example courtesy of https://github.com/akulakov
 
 # Method resolution order in Python:
 # 	https://www.python.org/download/releases/2.3/mro/
