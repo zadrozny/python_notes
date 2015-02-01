@@ -24,20 +24,20 @@ class C(A,B):
 C().x()
 
 
-# ... with this:
+#... with this:
 
-# class A:
-#     def x(self):
-#         print("in A")
-#         super().x()
+class A:
+    def x(self):
+        print("in A")
+        super().x()
 
-# class B:
-#     def x(self):
-#         print("in B")
+class B:
+    def x(self):
+        print("in B")
 
-# class C(B,A):
-#     def x(self):
-#         print("in C")
-#         super().x()
+class C(B,A):
+    def x(self):
+        print("in C")
+        super().x()
 
-# C().x()
+C().x()
